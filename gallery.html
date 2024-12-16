@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 kolom dengan lebar yang sama */
+            gap: 20px; /* Jarak antar foto */
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 200px; /* Lebar gambar */
+            height: 200px; /* Tinggi gambar */
+            object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak rasio aspek */
+            border-radius: 10px; /* Sudut melengkung pada gambar */
+        }
+
+        .gallery-item p {
+            margin-top: 10px; /* Memberi jarak antara gambar dan teks */
+        }
+
+        .gallery h2 {
+            margin-bottom: 20px; /* Jarak antara judul dan galeri */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html" class="active">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <h2>Gallery Produk Kami</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="citrus.jpg" alt="Citrus Cooler">
+                <p><strong>Citrus Cooler</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="tropical.jpg" alt="Tropical Splash">
+                <p><strong>Tropical Splash</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="berry.jpg" alt="Berry Bliss">
+                <p><strong>Berry Bliss</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="minty.jpg" alt="Minty Fresh">
+                <p><strong>Minty Fresh</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="apple.jpg" alt="Apple Chill">
+                <p><strong>Apple Chill</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="peach.jpg" alt="Peach Paradise">
+                <p><strong>Peach Paradise</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="watermelon.jpg" alt="Watermelon Wave">
+                <p><strong>Watermelon Wave</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="stobery.jpg" alt="Strawberry Sparkle">
+                <p><strong>Strawberry Sparkle</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Simple Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

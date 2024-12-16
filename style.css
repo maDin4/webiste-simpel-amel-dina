@@ -1,0 +1,117 @@
+/* Reset gaya dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General Styles */
+body {
+    line-height: 1.6;
+    color: #0e0e0e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #92a7e5; /* Warna gelap */
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+header nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav a.active {
+    color: rgb(243, 247, 253);
+    border-bottom: 2px solid yellow;
+}
+
+header nav a:hover {
+    color: #ffdd57;
+}
+
+/* Section Styles */
+section {
+    padding: 2em; /* Padding diperbesar untuk semua section */
+    margin: 2em 0; /* Menambah margin antar-section */
+    text-align: center;
+}
+
+#home {
+    background-color: #f9f9f9;
+}
+
+#about,
+#contact {
+    background-color: #e2e2e2;
+}
+
+#features .feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#features .feature-item {
+    background: #b0aeae;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+/* Testimonials */
+blockquote {
+    font-style: italic;
+    color: #92a7e5;
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #92a7e5;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles for Learn More Button */
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(158, 142, 247);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #2980b9; /* Warna biru lebih gelap saat hover */
+}
